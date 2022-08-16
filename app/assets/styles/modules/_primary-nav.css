@@ -1,0 +1,46 @@
+.primary-nav {
+    padding-top: 10px;
+
+    @mixin atMedium {
+        padding-top: 0;
+    }
+    
+    ui {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+        display: inline-block;
+        padding-right: 7px;
+        @mixin atMedium {
+            padding-right: 20px;
+        }
+    }
+
+    li:last-child {
+        padding-right: 0;
+
+        @mixin atMedium {
+            padding-right: 20px; 
+        }
+    }
+
+    a {
+        color: $lightColor;
+        font-weight: 300;
+        text-decoration: none;
+        display:block;
+        padding: 5px 8px;
+        font-size: 0.8rem;
+        background-color: rgba(0, 65, 129, 1);
+
+        @mixin atMedium {
+            padding: 0;
+            font-size: 1rem;            
+            background-color: transparent;
+        }
+    }
+
+}

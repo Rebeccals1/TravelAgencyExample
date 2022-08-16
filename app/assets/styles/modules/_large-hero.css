@@ -1,24 +1,29 @@
 .large-hero {
-    border-bottom: 10px solid $mainColor;
-    position: relative;
+    border-bottom: 10px solid $secondColor;
+    display: grid;
+    grid-template-columns: 1fr;
 
     &__img {
-        display: block;
+        grid-column: 1;
+        grid-row: 1;
+
+        img {
+            display: block;
+        } 
     }
 
     &__text-content {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 0;
-        width: 100%;
+        align-self: center;
+        grid-column: 1;
+        grid-row: 1;
+        padding-top: 80px;
         text-align: center;
     }
 
     &__title {
         font-weight: 400;
         color: $secondColor;
-        font-size: 2.4rem;
+        font-size: 2.2rem;
         margin: 0;
 
         @mixin atSmall {
