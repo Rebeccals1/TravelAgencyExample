@@ -26,10 +26,8 @@ class StickyHeader {
         this.determineScrollDirection();
 
         if(window.scrollY > 60) {
-            console.log(".site-header--dark added");
             this.siteHeader.classList.add("site-header--dark");
         } else {
-            console.log(".site-header--dark removed");
             this.siteHeader.classList.remove("site-header--dark");
         }
 
@@ -52,7 +50,6 @@ class StickyHeader {
 
         if(this.argument1 > this.argument2 < this.argument3){
             let scrollPercent = el.getBoundingClientRect().y / this.browserHeight * 100;
-            console.log(scrollPercent);
 
             if(scrollPercent < 18 && scrollPercent > -0.1 && this.scrollDirection == 'down' || scrollPercent < 33 && this.scrollDirection == 'up'){
                 let matchingLink = el.getAttribute("data-matching-link");
