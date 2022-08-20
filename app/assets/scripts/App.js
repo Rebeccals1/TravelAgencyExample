@@ -4,7 +4,6 @@ import MobileMenu from './modules/mobileMenu';
 import RevealOnScroll from './modules/RevealOnScroll';
 import StickyHeader from './modules/StickyHeader';
 
-
 new StickyHeader();
 new RevealOnScroll(".feature-item", 75);
 new RevealOnScroll(".testimonial", 80);
