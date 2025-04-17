@@ -26,7 +26,7 @@ While in the TravelAgencyExample directory, type the folllowing:
 ```bash
 npm install
 ````
-Then type:
+Then type to run the site:
 ```bash
 npm run build
 
