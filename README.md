@@ -19,14 +19,17 @@ This is a sample static website built as a practice project to explore modern we
 ## 🛠️ Installation & Setup
 
 To run the project locally:
+
 Clone the repository:
 ```bash
 git clone https://github.com/Rebeccals1/TravelAgencyExample.git
 ````
+
 Then, while in the TravelAgencyExample directory:
 ```bash
 npm install
 ````
+
 Finally, type the following to run the site:
 ```bash
 npm run build
